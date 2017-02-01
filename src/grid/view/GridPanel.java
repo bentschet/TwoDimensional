@@ -1,25 +1,20 @@
 package grid.view;
 
-import javax.swing.JPanel;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.SpringLayout;
-import javax.swing.table.*;
-import grid.controller.GridController;
+import javax.swing.*;
+import grid.view.GridFrame;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.*;
 import grid.controller.GridController;
+import java.awt.Dimension;
 
 public class GridPanel extends JPanel 
 {
 	private GridController baseController;
-	private JTable gridTable;
-	private JScrollPane gridPane;
 	private SpringLayout baseLayout;
-	private JtextField columnField;
+	private JButton updateButton;
+	private JTextField columnField;
+	private JTextField rowField;
+	private JTextField somethingElseField;
+	private JTable tableThing;
 	
 	public GridPanel() 
 	{
