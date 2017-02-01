@@ -1,6 +1,7 @@
 package grid.view;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import grid.view.GridFrame;
 import java.awt.Color;
 import grid.controller.GridController;
