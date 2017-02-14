@@ -46,7 +46,14 @@ public class GridPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		updateButton.addActionListener(new ActionListener()
+				{
+					public void actionPerformed(ActionEvent click)
+					{
+						baseController.updateGrid(rowField.getText(), columnField.getText(), somethingElseField.getText());
+						repaint;
+					}
+				});
 	}
 
 }

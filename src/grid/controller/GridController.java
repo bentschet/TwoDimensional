@@ -31,5 +31,23 @@ public class GridController
 			}
 		}
 	}
+	
+	public void updateGrid()
+	{
+		
+	}
+	
+	private boolean isValid(String temp)
+	{
+		try
+		{
+			Integer.parseInt(temp);
+			return true;
+		}
+		catch(NumberFormatException Error)
+		{
+			JOptionPane.showMessageDialog(gridFrame,  "Use an int, please");
+		}
+	}
 
 }
