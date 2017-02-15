@@ -46,8 +46,9 @@ public class GridController
 		}
 		catch(NumberFormatException Error)
 		{
-			JOptionPane.showMessageDialog(gridFrame,  "Use an int, please");
+			JOptionPane.showMessageDialog(appFrame,  "Use an int, please");
 		}
+		return false;
 	}
 
 }
